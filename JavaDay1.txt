@@ -1,0 +1,106 @@
+
+				====JAVA======
+
+	=> Java is a object oriented programming language.
+	=> It support with object oriented programing features like
+			Encapsulation
+			Inheritence
+			Polymorphisim
+			Abstration.
+
+	Why java we should learn before selenium:-->
+
+	Because selenium developed under java programs,Inorder to
+	run selenium programs we need to understand java basics.
+
+		
+				Package
+				class
+				method
+				variable
+				statement
+				constructor
+				mainmethod
+				object
+
+
+package:-->
+	=> A package is collection of related classes.
+	=> It work as a  namegroup for collection of classes
+	=> Package doesn't allow same duplicate classes, Inorder to write
+		duplicate classes we should create another package.
+	
+
+Create package in Eclipse:-->
+
+	* Under project right click on src 
+	* use New option select --> package. 
+	* Enter packagename name  [starts with lowercase]
+	* Make sure package name is unique.It should not be duplicated with 
+	any package with in project.
+
+
+	How to create sub packages under mainpackage:-->
+
+		Use .[dot] operator to create sub packages under main package
+
+
+		mq.java
+		mq.selenium
+
+		=> mq is parent package 
+		=> java,selenium are sub packages under parent package
+
+============================================================>>>
+
+Class:--->
+		
+
+	* Class is a blureprint or template
+	* Class save data in methods,variables,construtors
+	* Class is a category,under category we can find set of behaviours.
+
+
+	Note:--> In java any programming  design or exectuion doesn't happen
+		 without declaration of class
+
+Syntax:-->
+
+	class <classname>	class  RobotA		public  class RobotB
+	{			{			{
+
+	}			}			}
+
+
+
+	Class name with Access modifiers:-->
+
+	public:-->
+		This modifier allow class programms to access across the project.
+	package:-->
+		This modifier allow class information to access inside a package..
+		othername of package is "no modifier" class
+	
+	Variable Modifiers:-->
+
+	private:-->
+		This modifier restrict class information to use outside class
+	protected:-->
+		This modifier extend class information to  inherited class 
+		and their sibling classes
+
+
+	Classname Declaration:-->
+			
+			=> Starts With Uppercase     [Sample]
+			=> Can Follow Numeric Chars  [Sample1]
+			=> Can Follow UnderScore     [Sample_Data]
+	
+
+
+Create Class in Eclipse:-->
+
+		Right click on package----->New ---------->select Class
+		Enter classname click on Finish.
+
+		Note:--> Classname start with uppercase.
