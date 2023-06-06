@@ -1,6 +1,5 @@
 package mq.java.methods;
 
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ToyRemote 
 {
@@ -44,7 +43,7 @@ public class ToyRemote
 		new ToyRemote().moveright();
 		new ToyRemote().moveleft();
 		new ToyRemote().standby();
-		new ChromeDriver();
+		
 	}
 	
 	
