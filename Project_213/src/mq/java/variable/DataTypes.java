@@ -64,6 +64,7 @@ public class DataTypes
 		
 		
 		
+		
 		/*
 		 * float:-->
 		 * 		=> Float accept decimal values same as double
