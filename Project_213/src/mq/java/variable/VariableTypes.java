@@ -23,9 +23,14 @@ public class VariableTypes
 	
 	
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	public static void main(String[] args) 
+	{
+		VariableTypes obj=new VariableTypes();
+		String NewEmail=obj.email;
+		System.out.println(NewEmail);
+		
+		int Num=VariableTypes.value;
+		System.out.println(Num);
 	}
 
 }

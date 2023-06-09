@@ -38,7 +38,7 @@ public class Override_Variable
 		int x=obj.b=500;
 		System.out.println("Overriden value --"+x);
 		
-		
+		System.out.println(obj.b);
 
 	}
 
