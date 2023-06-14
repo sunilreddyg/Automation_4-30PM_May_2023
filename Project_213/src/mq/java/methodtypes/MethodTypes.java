@@ -11,6 +11,7 @@ public class MethodTypes
 		System.out.println(c);
 	}
 	
+	//Integer return method
 	public int method2()
 	{
 		int x=10;
@@ -33,14 +34,33 @@ public class MethodTypes
 	 */
 	
 	
+	//String return method
+	public String method3()
+	{
+		return "MINDQ";
+	}
+	
+	//double return method
+	public double method4()
+	{
+		return 12000.00;
+	}
+	
+	
 
 	public static void main(String[] args) 
 	{
 		MethodTypes obj=new MethodTypes();
-		obj.method1();
+		obj.method1();    //Call void method
 		
-		int total=obj.method2()+10;
+		int total=obj.method2()+10;   //Calling integer return method
 		System.out.println(total);
+		
+		String name=obj.method3();	 //Calling String return method
+		System.out.println(name);
+		
+		double price=obj.method4();	 //Calling double return method
+		System.out.println(price);
 	}
 
 }
