@@ -43,6 +43,7 @@ Html Source for dropdown:-->
 				=> selecting process for list boxes 		
 				Step1:-->   First click to open list of items
 				step2:--> 	Second click to select one of item from list.
+				step3:-->   Manage time between two interaction to avoid exception..
 							
 							
 				
