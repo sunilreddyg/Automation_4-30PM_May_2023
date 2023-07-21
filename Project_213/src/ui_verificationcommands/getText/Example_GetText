@@ -1,0 +1,59 @@
+
+
+Example:-->
+
+		<button id="Sbtn"> Open Account </button>
+		
+		
+		String ElementText=driver.findElement(By.id("Sbtn")).getText();
+		System.out.println(ElementText);-------------------[Open Account]
+		
+		
+Example:-->
+
+		<button id="Sbtn"></button>
+		
+		String ElementText=driver.findElement(By.id("Sbtn")).getText();
+		System.out.println(ElementText);-------------------[Empty characters]
+		
+		
+Example:-->
+
+		<div id="content">
+				CityName:
+			<span id="City"> Hyderabad </span>
+		</div>
+		
+		
+		String Text1=driver.findElement(By.id("content")).getText();
+		System.out.println(Text1); ---------------------->
+												[CityName:]
+												[Hyderabad]
+		
+		String Text2=driver.findElement(By.id("City")).getText();
+		System.out.println(Text2); ----------------------[Hyderabad]
+		
+		
+Example:-->
+
+		<div id="content">
+			<span id="City" style="display:none"> Hyderabad </span>
+		</div>
+		
+		String Text2=driver.findElement(By.id("City")).getText();
+		System.out.println(Text2); ----------------------[Empty characters]
+		
+		Note:--> Style="display:none" idicates object hidden at webpage
+				text only reads when object visible at webpage
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
