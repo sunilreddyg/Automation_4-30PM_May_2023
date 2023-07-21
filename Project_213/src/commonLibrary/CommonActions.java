@@ -12,6 +12,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.io.FileHandler;
@@ -20,11 +21,11 @@ import org.openqa.selenium.support.ui.Select;
 public class CommonActions 
 {
 	
-	WebDriver driver=null;
+	public WebDriver driver=null;
 	String screenpath="F:\\02_June_2023_4-30PM\\Project_213\\screens\\";
 	String MainwindowId;
 	/*
-	 * Keyword:--> Launch browsers [Chrome and Firefox]
+	 * Keyword:--> Launch browsers [Chrome and Firefox and Edge]
 	 */
 	public void LaunchBrowser(String browsername)
 	{
@@ -35,6 +36,10 @@ public class CommonActions
 		else if(browsername.equals("firefox"))
 		{
 			driver=new FirefoxDriver();
+		}
+		else if(browsername.equals("edge"))
+		{
+			driver=new EdgeDriver();
 		}
 		else
 		{
@@ -268,6 +273,61 @@ public class CommonActions
 	{
 		driver.switchTo().window(MainwindowId);
 	}
+	
+	
+	//Verify Required title presented at webpage
+	public boolean VerifyTitle(String ExpTitle)
+	{
+		String PageTitle=driver.getTitle();
+		boolean flag=PageTitle.equalsIgnoreCase(ExpTitle);
+		return flag;
+	}
+	
+	
+	//Verify Required title presented at webpage
+	public boolean VerifyUrl(String ExpUrl)
+	{
+		String PageUrl=driver.getCurrentUrl();
+		boolean flag=PageUrl.contains(ExpUrl);
+		return flag;
+	}
+	
+	
+	//Verify ElementPresentedAtSource
+	public boolean VerifyElementAtSource(String ElementID)
+	{
+		return driver.getPageSource().contains(ElementID);
+	}
+	
+	
+	//ElementPresented at source
+	public boolean VerifyElementPresetnedAtSource(String xpath)
+	{
+		boolean flag=false;
+		try {
+			driver.findElement(By.xpath(xpath));
+			flag=true;
+		} catch (Exception e) {
+			e.printStackTrace();
+			
+		}
+		return flag;
+	}
+			
+			
+	//Verify ElementPresentedAtSource
+	public WebElement CheckElementPresentedAtSource(String xpath)
+	{
+		try {
+			return driver.findElement(By.xpath(xpath));
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+	}
+	
+	
+	
 	
 	
 

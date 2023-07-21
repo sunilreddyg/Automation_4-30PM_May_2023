@@ -12,9 +12,14 @@ public class Run_Keywords extends CommonActions
 	{
 		setup("firefox", url);
 		System.out.println(driver.getTitle());
-		typetext("//input[@name='username']", "Admin");
-		typekeys("//input[@type='password']", "admin123");
-		typewithjs("//input[@type='password']", "dsfsdfdsfdfdfdfdsf");
+		if(VerifyTitle("OrangeHRM"))
+		{
+			typetext("//input[@name='username']", "Admin");
+			typekeys("//input[@type='password']", "admin123");
+			typewithjs("//input[@type='password']", "dsfsdfdsfdfdfdfdsf");
+			CaptureScreen("LoginPage");
+		}
+		
 	}
 
 }
