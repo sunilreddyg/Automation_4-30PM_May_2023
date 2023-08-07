@@ -1,0 +1,53 @@
+Dropdown Verification commands:-->
+
+
+		getOptions
+		getAllSelectedOptions
+		getFirstSelectedOption
+		
+getOptions:-->
+		Method collect list of option tag elements under dropdown,
+		And allowed user to verify expected options or Optioncount
+		under selected dropdown..
+		
+		Example:--> How to get Dropdown Options Count
+		
+			Select Dropdown=new Select(driver.findElement(By.id("DropdownId"));
+			int Obj_count=Dropdown.getOptions().size();
+			Systems.out.println("Object count available at dropdown is "+Obj_count)
+
+getAllSelectedOptions:-->
+
+		Note;--> This method only works on multiple selection dropdown
+		
+		=> Method collect list of options selected under multiple
+			selection dropdown.And its help verify selection count.
+			
+			
+			Example:--> How to verify maximum selection count at dropdown
+			
+			Select Dropdown=new Select(driver.findElement(By.id("DropdownId"));
+			int Selection_Count=Dropdown.getAllSelectedOptions().size();
+			System.out.println("Selected Option count is "+Selection_Count);
+
+			Note:--> Before use this command make sure dropdown is multiple
+					 option selection type.
+	
+getFirstSelectedOption():-->
+
+			=> Method verify selected option populated at dropown
+			
+			
+			example:-->
+				WebElement Dropdown_month=driver.findElement(By.id("month"));
+		
+				String Expected_month="Nov";
+		
+				//Read selected month at dropdown
+				String Act_month=new Select(Dropdown_month)
+							.getFirstSelectedOption().getText();
+		
+				if(Expected_month.equals(Act_month))
+					System.out.println("Testpass, Expected Month is Displayed");
+				else
+					System.out.println("Testfail, Expected month is not displayed");
