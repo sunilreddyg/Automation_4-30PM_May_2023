@@ -18,6 +18,9 @@ public class StaticArray_Single_Dimension
 		int a=num[1];
 		System.out.println(a);    //Output 200
 		
+		//Get length of array
+		System.out.println(num.length);
+		
 		
 		//String array [Group  of String values]
 		String names[]=new String[3];
