@@ -57,11 +57,11 @@ public class CrossBrowserTest {
 				 {
 					 System.out.println(LinkName+"\t"+"Title not verified");
 				 }
-			}
+			}//Inner loop
 			
 			
 			
-		}
+		}//Outterloop
 		
 
 

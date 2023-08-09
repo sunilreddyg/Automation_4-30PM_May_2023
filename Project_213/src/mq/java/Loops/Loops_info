@@ -69,7 +69,7 @@ while:-->
 		Syntax:--> 
 				while(condition)
 		 		{
-		 
+		 				//Write statement to execute
 				}
 			
 		=> While accept only boolean value.	
@@ -83,4 +83,12 @@ Do-While:-->
 		do
 		{
 		
-		}while(condition);			
+		}while(condition);	
+		
+		
+		
+		
+		
+		
+		
+				
