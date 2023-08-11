@@ -9,7 +9,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
-public class GroupLinks {
+public class GroupLinks 
+{
 
 	public static void main(String[] args) throws Exception 
 	{
@@ -38,6 +39,7 @@ public class GroupLinks {
 			EachTab.click();
 			Thread.sleep(2000);
 			
+			//switch to second window..
 			Set<String> Allwindows=driver.getWindowHandles();
 			for (String Eachwindow : Allwindows) 
 			{
@@ -54,7 +56,7 @@ public class GroupLinks {
 				System.out.println(Linkname+"  ---> Url mismatched  ");
 			}
 			
-			System.out.println(driver.getTitle());
+			//Close sigle window
 			driver.close();
 			
 			//Switch back to mainwidow
