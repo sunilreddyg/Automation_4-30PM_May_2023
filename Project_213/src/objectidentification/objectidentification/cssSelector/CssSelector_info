@@ -37,7 +37,7 @@ Default_css:-->
 		
 		driver.findElement(By.cssSelector("#email"));
 		driver.findElement(By.cssSelector(".login"));
-
+		driver.findElement(By.cssSelector("input"));   //Identify tagname propery
 		Note:--> During Default cssSelector   
 				# refer IDproperty
 			    . refer Class Property
@@ -215,6 +215,7 @@ Syntax:-->
 		parentnode  <space> childnode...
 
 		By.cssSelector("div[id='login_conainer']  input")
+		By.cssSelector("div[id='login_container']  div[class='demo']  input")
 		By.cssSelector("div[id='login_container'] > div[class='demo'] > input")
 		
 ===============================================================================
@@ -237,7 +238,7 @@ Htmsource:--> Identify Required object using Position
 			<div class="logo"></div>
 			<selector class="logo"></selector>
 			<div class="logo"></div>
-			<selector class="logo"></selector>
+			<selector class="logo"></selector>    ---> Target object
 			<div class="logo"></div>
 		<div>
 		
