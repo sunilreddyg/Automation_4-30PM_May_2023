@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="RunningTestmethods">
+	<test name="Testing Methods" verbose="2">
+		<classes>
+			<class name="framework.testng.Testng_Method_Dependencies">
+				<methods>
+					<include name="Browser_launch"/>
+					<include name="App_Load"/>
+					<include name="User_login"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="CrossBrowserTest" parallel="tests" >
+
+		<parameter name="Application_url" value="http://facebook.com"/>
+		<parameter name="uid" value="darshan"/>
+		<parameter name="pwd" value="darsh@123"/>
+		
+		
+		<test  name="TestWithchrome">
+		<parameter name="browser_name" value="chrome"/>
+			<classes>
+				<class name="framework.testng.CrossBrowserTest.CrossBrowser_Test"/>
+			</classes>
+		</test>
+		
+		<test  name="TestWithfirefox">
+		<parameter name="browser_name" value="firefox"/>
+			<classes>
+				<class name="framework.testng.CrossBrowserTest.CrossBrowser_Test"/>
+			</classes>
+		</test>
+		
+</suite>

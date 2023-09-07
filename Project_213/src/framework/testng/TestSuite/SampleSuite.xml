@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="MyFirstSuite" verbose="2">
+	<test name="testA" >
+		<classes>
+			<class name="framework.testng.TestSuite.Class1"/>
+			<class name="framework.testng.TestSuite.Class3"/>
+		</classes>
+	</test>
+</suite>
